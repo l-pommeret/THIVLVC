@@ -3,7 +3,9 @@
 Code and data for our [EvaLatin 2026](https://circse.github.io/LT4HALA/2026/EvaLatin) submission.
 
 > **THIVLVC**: Retrieval Augmented Dependency Parsing for Latin
+>
 > Luc Pommeret, Thibault Wagret, Jules Deret
+>
 > *LT4HALA 2026 Workshop @ LREC 2026*
 
 ## Overview
