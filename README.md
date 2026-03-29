@@ -125,10 +125,17 @@ Then open `http://localhost:8000` in your browser.
 
 ```bibtex
 @inproceedings{pommeret-etal-2026-thivlvc,
-  title     = {{THIVLVC}: Retrieval Augmented Dependency Parsing for Latin},
-  author    = {Pommeret, Luc and Wagret, Thibault and Deret, Jules},
-  booktitle = {Proceedings of the LT4HALA 2026 Workshop},
-  year      = {2026}
+    title = "{THIVLVC}: Retrieval Augmented Dependency Parsing for Latin",
+    author = "Pommeret, Luc  and
+      Wagret, Thibault and
+      Deret, Jules",
+    editor = "Sprugnoli, Rachele  and
+      Passarotti, Marco",
+    booktitle = "Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026)",
+    month = may,
+    year = "2026",
+    address = "Palma, Mallorca (Spain)",
+    publisher = "ELRA"
 }
 ```
 
