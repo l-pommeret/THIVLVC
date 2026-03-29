@@ -17,7 +17,9 @@ We submit two configurations:
 - **THIVLVC_1**: LLM + UDPipe + UD guidelines (no retrieval)
 - **THIVLVC_2**: THIVLVC_1 + RAG on CIRCSE
 
-![System overview](system.png)
+<p align="center">
+  <img src="system.png" alt="System overview" width="300">
+</p>
 
 ## Results
 
