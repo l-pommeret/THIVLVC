@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evalatin2026</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="logo">EVALATIN <span>MDCCCXXVI</span></div>
+        <div class="stats">
+            <span id="progress-text">Case 0 / 0</span>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <span id="phase-label" class="phase-label"></span>
+        </div>
+    </header>
+
+    <main id="app">
+        <div class="loading">Chargement des données...</div>
+    </main>
+
+    <template id="eval-template">
+        <div class="container fade-in">
+            <div class="benchmark-tag" id="benchmark-name">POETRY</div>
+
+            <section class="sentence-display">
+                <p id="sentence-text"></p>
+            </section>
+
+            <div class="comparison-grid">
+                <div class="option-card" id="option-a">
+                    <div class="card-header">Option A</div>
+                    <div class="table-container">
+                        <table id="table-a">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Mot</th>
+                                    <th>Tête</th>
+                                    <th>Relation</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="option-card" id="option-b">
+                    <div class="card-header">Option B</div>
+                    <div class="table-container">
+                        <table id="table-b">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Mot</th>
+                                    <th>Tête</th>
+                                    <th>Relation</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="controls-primary">
+                    <button class="btn btn-choice btn-a" data-choice="a">A est meilleur que B</button>
+                    <button class="btn btn-choice btn-b" data-choice="b">B est meilleur que A</button>
+                </div>
+                <div class="controls-secondary">
+                    <button class="btn btn-choice btn-secondary" data-choice="both_wrong">A et B ont tort</button>
+                    <button class="btn btn-choice btn-secondary" data-choice="undecidable">On ne peut pas décider</button>
+                    <button class="btn btn-choice btn-secondary" data-choice="dunno">Je ne sais pas</button>
+                </div>
+            </div>
+
+            <div class="navigation-bar">
+                <button class="btn btn-nav" id="btn-back" title="Revenir en arrière">&#8592; Précédent</button>
+                <div class="jump-to">
+                    <label for="jump-input">Aller au n° :</label>
+                    <input type="number" id="jump-input" min="1" placeholder="n°">
+                    <button class="btn btn-nav" id="btn-jump">OK</button>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <details>
+                    <summary>📜 Règles UD pertinentes</summary>
+                    <div class="rules-content" id="rules-box">
+                        <p>Chargement des règles...</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </template>
+
+    <template id="practice-transition-template">
+        <div class="container fade-in">
+            <div class="sentence-display practice-transition">
+                <h2>Banc d'essai terminé !</h2>
+                <p>Vous avez terminé les <strong>50 exemples d'entraînement</strong>.</p>
+                <p>Ces réponses ne comptent pas dans l'évaluation finale.</p>
+                <p>Vous êtes maintenant prêt(e) pour l'évaluation réelle.</p>
+                <div class="practice-stats" id="practice-stats"></div>
+                <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
+                    <button class="btn btn-choice btn-a" id="btn-start-eval">Commencer l'évaluation</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        L. Pommeret <span>MDCCCXXVI</span>
+    </footer>
+
+    <script src="app.js?v=202603050001"></script>
+</body>
+
+</html>
