@@ -1,10 +1,11 @@
 # THIVLVC: Retrieval Augmented Dependency Parsing for Latin
 
-Code and data for our [EvaLatin 2026](https://circse.github.io/LT4HALA/2026/EvaLatin) paper.
+Code and data for our [EvaLatin 2026](https://circse.github.io/LT4HALA/2026/EvaLatin) paper, published at the LT4HALA 2026 Workshop @ LREC 2026.
 
-> "```THIVLVC```: Retrieval Augmented Dependency Parsing for Latin"
+> [THIVLVC: Retrieval Augmented Dependency Parsing for Latin](https://aclanthology.org/2026.lt4hala-1.20/)
 > Luc Pommeret, Thibault Wagret, Jules Deret
-> *LT4HALA 2026 Workshop @ LREC 2026*
+> *Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026) @ LREC 2026*, pages 219–225
+> DOI: [10.63317/2q8twojtotyb](https://doi.org/10.63317/2q8twojtotyb)
 
 ## Overview
 
@@ -13,7 +14,7 @@ THIVLVC is a two-stage system for Latin dependency parsing:
 1. **Retrieval**: Given an input sentence, retrieve structurally similar examples from the CIRCSE treebank using sentence length and POS n-gram similarity.
 2. **Generation**: An LLM refines the UDPipe baseline parse using the retrieved examples and UD annotation guidelines.
 
-We submit two configurations:
+We submitted two configurations:
 - **THIVLVC_1**: LLM + UDPipe + UD guidelines (no retrieval)
 - **THIVLVC_2**: THIVLVC_1 + RAG on CIRCSE
 
@@ -127,16 +128,19 @@ Then open `http://localhost:8000` in your browser.
 
 ```bibtex
 @inproceedings{pommeret-etal-2026-thivlvc,
-    title = "{THIVLVC}: Retrieval Augmented Dependency Parsing for Latin",
+    title = "{THIVLVC}: Retrieval Augmented Dependency Parsing for {L}atin",
     author = "Pommeret, Luc  and
-      Wagret, Thibault and
+      Wagret, Thibault  and
       Deret, Jules",
     editor = "Sprugnoli, Rachele  and
       Passarotti, Marco",
-    booktitle = "Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026)",
+    booktitle = "Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages ({LT}4{HALA} 2026) @ {LREC} 2026",
     month = may,
     year = "2026",
     address = "Palma, Mallorca (Spain)",
-    publisher = "ELRA"
+    publisher = "ELRA Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/2026.lt4hala-1.20/",
+    doi = "10.63317/2q8twojtotyb",
+    pages = "219--225"
 }
 ```
